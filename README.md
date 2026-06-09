@@ -2,7 +2,7 @@
 
 Terraform stack deploying a 3-tier Java/PostgreSQL application on [Clever Cloud](https://clever.cloud) (eu-fr-1, Paris) — EU sovereign cloud infrastructure.
 
-Built as a working implementation of the architecture described in an Internal Developer Platform (IDP) use case for the European Commission's DIGIT.B.4 Cloud Centre of Excellence.
+Built as a working implementation of an Internal Developer Platform (IDP) stack pattern — demonstrating how a Cycloid-style service catalogue entry would provision a standard application stack on EU sovereign cloud infrastructure.
 
 ## Architecture
 
