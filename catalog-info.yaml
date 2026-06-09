@@ -72,6 +72,7 @@ metadata:
   description: 3-tier Java/PostgreSQL demo stack deployed to Clever Cloud via Terraform — EC IDP use case
   annotations:
     github.com/project-slug: t12-pybash/clever-cloud-3tier
+    backstage.io/ci-cd: github-actions
   tags:
     - java
     - postgresql
