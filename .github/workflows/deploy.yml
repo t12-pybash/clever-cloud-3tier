@@ -18,12 +18,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      CC_CONSUMER_KEY: ${{ secrets.CC_CONSUMER_KEY }}
-      CC_CONSUMER_SECRET: ${{ secrets.CC_CONSUMER_SECRET }}
-      CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
-      CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
-      CC_ORGANISATION: ${{ secrets.CC_ORG_ID }}
       TF_VAR_org_id: ${{ secrets.CC_ORG_ID }}
+      TF_VAR_clever_token: ${{ secrets.CLEVER_TOKEN }}
+      TF_VAR_clever_secret: ${{ secrets.CLEVER_SECRET }}
+      TF_VAR_consumer_key: ${{ secrets.CC_CONSUMER_KEY }}
+      TF_VAR_consumer_secret: ${{ secrets.CC_CONSUMER_SECRET }}
       TF_VAR_environment: ${{ github.event.inputs.environment || 'dev' }}
 
     steps:

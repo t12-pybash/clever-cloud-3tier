@@ -8,13 +8,9 @@ terraform {
 }
 
 provider "clevercloud" {
-  # Credentials via environment variables:
-  # export CC_CONSUMER_KEY=...
-  # export CC_CONSUMER_SECRET=...
-  # export CLEVER_TOKEN=...
-  # export CLEVER_SECRET=...
-  # export CC_ORGANISATION=...
-  #
-  # Get token/secret by running: clever login
-  # Get consumer key/secret from: ~/.nvm/.../clever-tools/src/config/config.js
+  token           = var.clever_token
+  secret          = var.clever_secret
+  consumer_key    = var.consumer_key
+  consumer_secret = var.consumer_secret
+  organisation    = var.org_id
 }

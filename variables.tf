@@ -3,6 +3,30 @@ variable "org_id" {
   type        = string
 }
 
+variable "clever_token" {
+  description = "Clever Cloud OAuth token"
+  type        = string
+  sensitive   = true
+}
+
+variable "clever_secret" {
+  description = "Clever Cloud OAuth secret"
+  type        = string
+  sensitive   = true
+}
+
+variable "consumer_key" {
+  description = "Clever Cloud OAuth consumer key"
+  type        = string
+  sensitive   = true
+}
+
+variable "consumer_secret" {
+  description = "Clever Cloud OAuth consumer secret"
+  type        = string
+  sensitive   = true
+}
+
 variable "region" {
   description = "Clever Cloud region — eu-fr-1 for EU sovereignty"
   type        = string
