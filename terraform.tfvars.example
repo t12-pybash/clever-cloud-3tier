@@ -1,0 +1,5 @@
+org_id      = "user_xxxx"   # Your Clever Cloud organisation ID
+region      = "par"          # eu-fr-1 Paris — EU sovereign cloud region
+environment = "dev"
+app_name    = "java-3tier"
+db_name     = "app_db"
