@@ -1,4 +1,20 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform-team
+  description: T-12 platform engineering team
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ciaran
+spec:
+  memberOf: [platform-team]
+---
+apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: t12-platform
